@@ -24,7 +24,7 @@ export default function CharacterList() {
         {characters.map(character => { 
          return (
            <CharacterCard 
-             key = {character.id}
+             id = {character.id}
              name = {character.name}
            />
         )
