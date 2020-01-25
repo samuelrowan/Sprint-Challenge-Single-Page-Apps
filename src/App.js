@@ -19,8 +19,7 @@ export default function App() {
       />
       <Route
         path="/characterList/:id"
-        render={props => <Character {...props} characters={characters} />}
-      />
+        component={Character} />
     </main>
   );
 }
