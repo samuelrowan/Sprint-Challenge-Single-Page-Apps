@@ -9,6 +9,7 @@ const CharacterCard = props => {
       <Link to={`/characterList/${props.id}`}>
             <p>{props.name}</p>
           </Link>
+          {/* there is something wrong with this link. it shows "undefined" in the URL */}
       </CardBody>
     </Card>
   );
