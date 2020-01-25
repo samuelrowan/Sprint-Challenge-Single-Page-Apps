@@ -12,6 +12,10 @@ const CharacterCard = props => {
           {/* there is something wrong with this link. it shows "undefined" in the URL */}
       </CardBody>
     </Card>
+    <Route
+    path="/characterList/:id"
+    render={props => <Character {...props} characters={characters} />}
+  />
   );
 }
 export default CharacterCard;
