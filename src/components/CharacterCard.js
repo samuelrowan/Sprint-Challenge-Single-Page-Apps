@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import { Route, Link } from "react-router-dom";
-import Character from "./character";
+import Character from "./Character";
 
 const CharacterCard = props => {
   return (
@@ -12,10 +12,7 @@ const CharacterCard = props => {
           </Link>
       </CardBody>
     
-    <Route
-    path="/characterList/:id"
-    render={props => <Character {...props} characters={characters} />}
-  />
+   
   </Card>
   );
 }
