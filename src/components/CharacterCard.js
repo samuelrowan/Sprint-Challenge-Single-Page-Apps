@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 import { Route, Link } from "react-router-dom";
+import Character from "./character";
 
 const CharacterCard = props => {
   return (
@@ -9,13 +10,13 @@ const CharacterCard = props => {
       <Link to={`/characterList/${props.id}`}>
             <p>{props.name}</p>
           </Link>
-          {/* there is something wrong with this link. it shows "undefined" in the URL */}
       </CardBody>
-    </Card>
+    
     <Route
     path="/characterList/:id"
     render={props => <Character {...props} characters={characters} />}
   />
+  </Card>
   );
 }
 export default CharacterCard;
